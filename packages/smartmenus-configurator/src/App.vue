@@ -130,6 +130,56 @@ const navbarContentHTML = computed(() => {
             <li class="sm-sub-item"><a class="sm-sub-link sm-disabled" href="#">Disabled</a></li>
           </ul>
         </li>
+        <li class="sm-nav-item"><a class="sm-nav-link sm-sub-toggler" href="#">Long-Sub</a>
+          <ul class="sm-sub">
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link sm-sub-toggler" href="#">Sub</a>
+              <ul class="sm-sub">
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link sm-sub-toggler" href="#">Sub</a>
+                  <ul class="sm-sub">
+                    <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                    <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                    <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                  </ul>
+                </li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+              </ul>
+            </li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item"><a class="sm-sub-link sm-sub-toggler" href="#">Long-Sub</a>
+              <ul class="sm-sub">
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+                <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+              </ul>
+            </li>
+            <li class="sm-sub-item"><a class="sm-sub-link" href="#">Link</a></li>
+            <li class="sm-sub-item-separator"></li>
+            <li class="sm-sub-item"><a class="sm-sub-link sm-disabled" href="#">Disabled</a></li>
+          </ul>
+        </li>
         <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
         <li class="sm-nav-item"><a class="sm-nav-link" href="#">Link</a></li>
         <li class="sm-nav-item"><a class="sm-nav-link sm-nav-link--split" href="#">Link</a><button class="sm-nav-link sm-nav-link--split sm-sub-toggler" aria-label="Toggle sub menu"></button>
