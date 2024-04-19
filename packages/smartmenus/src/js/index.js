@@ -980,19 +980,24 @@ class SmartMenus {
         x = -parentItemX
       }
 
-      if (!horizontalParent) {
-        if (subHeight < viewportHeight) {
-          if (parentItemY + y + subHeight > viewportHeight) {
-            // Align against the opposite edge of the viewport
-            y = viewportHeight - subHeight - parentItemY
-          } else if (parentItemY + y < 0) {
-            // Align against the same edge of the viewport
-            y = -parentItemY
-          }
-        } else {
-          // If the sub cannot fit inside the viewport, align it against the top edge of the viewport
-          y = downToUp ? viewportHeight - subHeight - parentItemY : -parentItemY
+      if (horizontalParent) {
+        const overHang = subHeight - (viewportHeight - (parentItemY + y))
+        if (overHang > 0) {
+          const liftBy = Math.max(y - overHang, -parentItemY) // at most lift to edge
+          x = parentItemWidth // align sub to the side
+          y = liftBy // lift sub
         }
+      } else if (subHeight < viewportHeight) {
+        if (parentItemY + y + subHeight > viewportHeight) {
+          // Align against the opposite edge of the viewport
+          y = viewportHeight - subHeight - parentItemY
+        } else if (parentItemY + y < 0) {
+          // Align against the same edge of the viewport
+          y = -parentItemY
+        }
+      } else {
+        // If the sub cannot fit inside the viewport, align it against the top edge of the viewport
+        y = downToUp ? viewportHeight - subHeight - parentItemY : -parentItemY
       }
     }
 
