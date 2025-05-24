@@ -5,21 +5,19 @@
 	$selector: $chain + 'a, ' + $chain + '*:not(ul) a, ' + $chain + 'ul';
 	@for $i from 1 through $level {
 		$chain: $chain + $chainable;
-		$selector: $selector + ',
-' + $chain + ' a, ' + $chain + '*:not(ul) a, ' + $chain + ' ul';
+		$selector: $selector + ', ' + $chain + ' a, ' + $chain + '*:not(ul) a, ' + $chain + ' ul';
 	}
 	#{$selector} {
-		@include border-radius(0 0 $amount $amount);
+		border-radius: 0 0 $amount $amount;
 	}
 	// highlighted items, don't need rounding since their sub is open
 	$chain: $chain_prefix;
 	$selector: $chain + 'a.highlighted, ' + $chain + '*:not(ul) a.highlighted';
 	@for $i from 1 through $level {
 		$chain: $chain + $chainable;
-		$selector: $selector + ',
-' + $chain + ' a.highlighted, ' + $chain + '*:not(ul) a.highlighted';
+		$selector: $selector + ', ' + $chain + ' a.highlighted, ' + $chain + '*:not(ul) a.highlighted';
 	}
 	#{$selector} {
-		@include border-radius(0);
+		border-radius: 0;
 	}
 }

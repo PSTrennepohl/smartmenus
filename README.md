@@ -16,17 +16,19 @@ Check out the [project documentation](http://www.smartmenus.org/docs/) for quick
 If you need to use any of the addons from the "addons" directory as an AMD or CommonJS module:
 
 ### AMD
-Make sure your SmartMenus jQuery plugin module is named `jquery.smartmenus` since the addons require that name. For example, in RequireJS you may need to add this in your config if you would like to use the minified version:
+Make sure your SmartMenus jQuery plugin module is named `smartmenus` since the addons require that name. For example, in RequireJS you may need to add this in your config:
 ```javascript
 requirejs.config({
   "paths": {
-    'jquery.smartmenus': 'jquery.smartmenus.min'
+    'smartmenus': 'jquery.smartmenus.min'
   }
   // ...
 ```
 
 ### CommonJS (npm)
 The addons are available as separate npm packages so you could properly install/require them in your project in addition to `jquery` and `smartmenus`:
+
+- Bootstrap 4 Addon: `npm install smartmenus-bootstrap-4`
 
 - Bootstrap Addon: `npm install smartmenus-bootstrap`
 
@@ -42,8 +44,8 @@ package.json:
   "license": "MIT",
   "dependencies": {
     "jquery": ">=2.1.3",
-    "smartmenus": ">=1.0.1",
-    "smartmenus-keyboard": ">=0.3.1"
+    "smartmenus": ">=1.1.0",
+    "smartmenus-keyboard": ">=0.4.0"
   },
   "devDependencies": {
     "browserify": ">=9.0.3"
@@ -67,6 +69,10 @@ Run browserify to create bundle.js: `browserify entry.js > bundle.js`
 ## Homepage
 
 <http://www.smartmenus.org/>
+
+## Documentation
+
+<http://www.smartmenus.org/docs/>
 
 ## Community and support
 
